@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+  }
+
+  html {
+    font-family: 'Comic Sans MS', "Comic Sans", cursive;
+    height: 100%;
+  }
+
+  body {
+    overflow: hidden;
+    height: inherit;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align:center;
+    margin: 0;
+
+    color: black;
+  }
+  p {
+    position: absolute;
+    margin: 0;
+    top: 35px;
+    right: 5px;
+    color: #aaa;
+  }
