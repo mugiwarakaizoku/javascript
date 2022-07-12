@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="chat-window">
+        <!--Chat header-->
+        <button id="chat-button" class="collapsable" type="button">
+            Chat with us! 
+            <i id="chat-icon" style="color: #fff" class="fa fa-fw fa-comments-o"></i>
+        </button>
+        <div class="visible-collapse" id="collapse-div">
+            <!--Chat messages-->
+            <div class="chat-messages">
+                <div id="bot-msg">
+                    <h5 id="timestamp"></h5>
+                    <p id="bot-first-message">Hi!</p>
+                </div>
+                <div id="user-messages"></div>
+            </div>
+            <!--Chat buttons-->
+            <div class="chat-bottom">
+                <input class="user-msg" type="text" placeholder="Tap 'Enter' to send message">
+                <div class="chat-icons">
+                    <i id="chat-icon" style="color:red"  class="fa fa-fw fa-heart"
+                    onclick="heartButton()"></i>
+                    <i id="chat-icon" style="color:#333"  class="fa fa-fw fa-send"
+                    onclick="sendButton()"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
